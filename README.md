@@ -17,4 +17,6 @@ installzabbix.sh – stáhne repozitář Zabbix, nainstaluje balíčky zabbix-ag
 
 confzabbix.sh – upraví konfiguraci Zabbix agenta (hostname, server, metadata, timeout) a restartuje službu
 
+zbx_export_hosts.yaml - export meho hosta "kucheriavyi" from zabbix, ve formatu yaml
+
 ![Ubuntu Zabbix Agent2](./photo.jpg)
