@@ -1,0 +1,21 @@
+zabbix_export:
+  version: '7.0'
+  host_groups:
+    - uuid: ec50fa856fa542bbba85796d423c2e92
+      name: Customer/SPOS
+  hosts:
+    - host: ubuntu-kucheriavyi
+      name: ubuntu-kucheriavyi
+      groups:
+        - name: Customer/SPOS
+      interfaces:
+        - ip: 185.32.182.8
+          dns: 8-182-32-185.orelsoft.cz
+          interface_ref: if1
+      tags:
+        - tag: OS
+          value: Linux
+      inventory:
+        name: ubuntu-kucheriavyi
+        os: 'Linux version 6.8.0-86-generic (buildd@lcy02-amd64-031) (x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0, GNU ld ('
+      inventory_mode: AUTOMATIC
